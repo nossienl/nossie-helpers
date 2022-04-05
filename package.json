@@ -1,0 +1,41 @@
+{
+  "name": "js-helpers",
+  "version": "1.0.0",
+  "description": "A nice greeter",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare" : "npm run build",
+    "prepublishOnly" : "npm test && npm run lint",
+    "preversion" : "npm run lint",
+    "version" : "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nossienl/js-helpers.git"
+  },
+  "files": ["lib/**/*"],
+  "keywords": [
+    "js",
+    "ts",
+    "helpers",
+    "utils"
+  ],
+  "author": "Nossienl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nossienl/js-helpers/issues"
+  },
+  "homepage": "https://github.com/nossienl/js-helpers#readme",
+  "devDependencies": {
+    "prettier": "^2.6.2",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.6.3"
+  }
+}
