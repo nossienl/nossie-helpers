@@ -1,7 +1,7 @@
 {
-  "name": "js-helpers",
-  "version": "1.0.0",
-  "description": "A nice greeter",
+  "name": "nossie-helpers",
+  "version": "1.0.1",
+  "description": "Helper functions",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nossienl/js-helpers.git"
+    "url": "git+https://github.com/nossienl/nossie-helpers.git"
   },
   "files": ["lib/**/*"],
   "keywords": [
@@ -29,9 +29,9 @@
   "author": "Nossienl",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nossienl/js-helpers/issues"
+    "url": "https://github.com/nossienl/nossie-helpers/issues"
   },
-  "homepage": "https://github.com/nossienl/js-helpers#readme",
+  "homepage": "https://github.com/nossienl/nossie-helpers#readme",
   "devDependencies": {
     "prettier": "^2.6.2",
     "tslint": "^6.1.3",
